@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='style_common.css') }}" /> 
+        <link rel="stylesheet" href="{{ url_for('static', filename='style_contact.css') }}" /> 
+        <title>La Griffardière</title>
+    </head>
+    <body>
+        <header>
+            <div id="bandereau"></div>
+            <nav>
+                <ul>
+					<li class="item_1"><a href="{{ url_for('index') }}">ACCUEIL</a></li>
+					<li class="item_2"><a href="{{ url_for('photos') }}">PHOTOS</a></li>
+					<li class="item_3"><a href="{{ url_for('produits') }}">PRODUITS</a></li>
+					<li class="item_4"><a href="{{ url_for('contact') }}">CONTACT/PLAN</a></li>					
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <h1>Où nous trouver ?</h1>
+            <article>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10886.209552764272!2d-2.2725557558590337!3d46.990125753220845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480517a92ecebd1d%3A0x1a49d4b81df1602d!2sLa+Griffardi%C3%A8re!5e0!3m2!1sfr!2sfr!4v1510182812173" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </article>
+            <aside>
+                <h3>Posez vos questions et recevez la réponse par mail !</h3>
+                <form class="formulaire_contact" method="post">
+                    <input class='input_prenom' placeholder='Prénom/Nom' autocomplete="off" type="text" name="prenom"/>
+                    <input class='input_email' placeholder='E-mail' autocomplete="off" type="text" name="mail"/>
+                    <textarea class='input_question' placeholder='Question/Commentaires' name="question"></textarea>
+                    <input class="input_submit" type="submit" value="ENVOYER"/>
+                </form>
+            </aside>
+        </section>
+        <footer>© La Griffardière. Tous droits réservés.</footer>
+    </body>
+</html>

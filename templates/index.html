@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='style_common.css') }}" /> 
+        <link rel="stylesheet" href="{{ url_for('static', filename='style_index.css') }}" /> 
+        <title>La Griffardière</title>
+    </head>
+    <body>
+        <header>
+            <div id="bandereau">
+            </div>
+        <nav>
+            <ul>
+                <li class="item_1"><a href="{{ url_for('index') }}">ACCUEIL</a></li>
+                <li class="item_2"><a href="{{ url_for('photos') }}">PHOTOS</a></li>
+                <li class="item_3"><a href="{{ url_for('produits') }}">PRODUITS</a></li>
+                <li class="item_4"><a href="{{ url_for('contact') }}">CONTACT/PLAN</a></li>
+            </ul>
+        </nav>
+        </header>
+        <section>
+            <article>
+                <p class="p_article">Sur l'île de Noirmoutier, on trouve de nombreuses spécialités telles que les pommes de terre, les huîtres, mais aussi le sel.</p>
+                <p class="p_article">Plus connu sous l'appellation de "gros sel naturel de Noirmoutier", ce dernier est récolté et apprécié de tous depuis des siècles.</p>
+                <iframe width="600" height="337" src="https://www.youtube.com/embed/COiUIfXV96w?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                <p class="p_article">Il se récolte au coeur des oeillets à l'aide d'une ételle. Mais sa récolte ne peut avoir lieu qu'après la ramasse de la fleur de sel. Rare et raffinéé, elle est le produit phare et très attendu par le saunier. Seules quelques tonnes sont produites au cours d'une saison. Pour cela, elle est très prisée par les consommateurs.</p>
+                <p class="p_article">Sur l'île de Noirmoutier, on trouve de nombreuses spécialités telles que les pommes de terre, les huîtres, mais aussi le sel.</p>
+                <p class="p_article">Sur l'île de Noirmoutier, on trouve de nombreuses spécialités telles que les pommes de terre, les huîtres, mais aussi le sel.</p>
+            </article>
+            <aside>
+                <h3>Alexis DUPONT</h3>
+                <img class="img_alex_marie" src="{{ url_for('static', filename='img/alex_marie.jpg') }}/" alt="" id="portrait" /> 
+                <p class="p_aside">Inter haec Orfitus praefecerens insolenter, viilem decuerat institutus, quo administrante.</p>
+                <p class="p_aside">seditionexcitatur et crebros. Inter  aeternam ultra modum delatae dignitatis sese.</p>
+                <p class="p_aside">seditionexcitatur et crebros. Inter  aeternam ultra modum delatae dignitatis sese.</p>
+            </aside>
+            </section>
+        <footer>© La Griffardière. Tous droits réservés.</footer>
+    </body>
+</html>
