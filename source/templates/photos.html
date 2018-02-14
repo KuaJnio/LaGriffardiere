@@ -2,8 +2,8 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <link rel="stylesheet" href="{{ url_for('static', filename='style_common.css') }}" /> 
-        <link rel="stylesheet" href="{{ url_for('static', filename='style_photos.css') }}" /> 
+        <link rel="stylesheet" href="{{ url_for('static', filename='style_common.css') }}" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='style_photos.css') }}" />
         <title>La Griffardière</title>
     </head>
     <body>
@@ -14,7 +14,7 @@
                     <li class="item_1"><a href="{{ url_for('index') }}">ACCUEIL</a></li>
                     <li class="item_2"><a href="{{ url_for('photos') }}">PHOTOS</a></li>
                     <li class="item_3"><a href="{{ url_for('produits') }}">PRODUITS</a></li>
-                    <li class="item_4"><a href="{{ url_for('contact') }}">CONTACT/PLAN</a></li>	
+                    <li class="item_4"><a href="{{ url_for('contact') }}">CONTACT/PLAN</a></li>
                 </ul>
             </nav>
         </header>
@@ -22,42 +22,32 @@
             <h1>Le marais en photos</h1>
             <div class="photo">
                 <img src="{{ url_for('static', filename='img/production/1.png') }}"/>
-                <span class="description">Description de la photo</span>
             </div>
             <div class="photo">
-                <span class="description">Description de la photo</span>
                 <img src="{{ url_for('static', filename='img/production/2.png') }}"/>
             </div>
             <div class="photo">
                 <img src="{{ url_for('static', filename='img/production/3.png') }}"/>
-                <span class="description">Description de la photo</span>
             </div>
             <div class="photo">
-                <span class="description">Description de la photo</span>
                 <img src="{{ url_for('static', filename='img/production/4.png') }}"/>
             </div>
             <div class="photo">
                 <img src="{{ url_for('static', filename='img/production/5.png') }}"/>
-                <span class="description">Description de la photo</span>
             </div>
             <div class="photo">
-                <span class="description">Description de la photo</span>
                 <img src="{{ url_for('static', filename='img/production/6.png') }}"/>
             </div>
             <div class="photo">
                 <img src="{{ url_for('static', filename='img/production/7.png') }}"/>
-                <span class="description">Description de la photo</span>
             </div>
             <div class="photo">
-                <span class="description">Description de la photo</span>
                 <img src="{{ url_for('static', filename='img/nettoyage/1.png') }}"/>
             </div>
             <div class="photo">
                 <img src="{{ url_for('static', filename='img/nettoyage/2.png') }}"/>
-                <span class="description">Description de la photo</span>
             </div>
             <div class="photo">
-                <span class="description">Description de la photo</span>
                 <img src="{{ url_for('static', filename='img/nettoyage/3.png') }}"/>
             </div>
         </section>
