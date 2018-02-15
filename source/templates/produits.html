@@ -2,21 +2,21 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <link rel="stylesheet" href="{{ url_for('static', filename='style_common.css') }}" /> 
-        <link rel="stylesheet" href="{{ url_for('static', filename='style_produits.css') }}" /> 
+        <link rel="stylesheet" href="{{ url_for('static', filename='style_common.css') }}" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='style_produits.css') }}" />
         <title>La Griffardière</title>
     </head>
 
     <body>
         <header>
-            <div id="bandereau">
-            </div>                
+            <a href="{{ url_for('index') }}"><div id="bandereau"></div></a>
+            </div>
         <nav>
             <ul>
                 <li class="item_1"><a href="{{ url_for('index') }}">ACCUEIL</a></li>
                 <li class="item_2"><a href="{{ url_for('photos') }}">PHOTOS</a></li>
                 <li class="item_3"><a href="{{ url_for('produits') }}">PRODUITS</a></li>
-                <li class="item_4"><a href="{{ url_for('contact') }}">CONTACT/PLAN</a></li>						
+                <li class="item_4"><a href="{{ url_for('contact') }}">CONTACT/PLAN</a></li>
             </ul>
         </nav>
         </header>
@@ -24,7 +24,7 @@
             <div class="section_produits">
                 <h1>Nos produits</h1>
                 <p class='p_article'>Vous pouvez trouver au point de vente de La Grifardière du gros sel, de la fleur de sel et du sel fin, à chaque fois nature ou aromatisé.</p>
-                <p class='p_article'>Ci-dessous se trouve la liste des différents formats et/ou aromates que nous proposons. Il est également possible si vous le désirez de passer une commande, un bon de commande me sera ensuite envoyé et je vous recontacterai dans la mesure du possible. </p>
+                <p class='p_article'>Ci-dessous se trouve la liste des différents formats et/ou aromates que nous proposons.</p>
                 <nav>
                     <ul>
                         <li class="item_1_1"><a href="javascript:void(0)">GROS SEL</a></li>
@@ -45,23 +45,23 @@
                                 <td class="champ"><center>500g nature</center></td>
                                 <td class="champ"><center>0,60€</center></td>
                             </tr>
-                            <tr> 
+                            <tr>
                                 <td class="champ"><center>1kg nature</center></td>
                                 <td class="champ"><center>1,00€</center></td>
                             </tr>
-                            <tr> 
+                            <tr>
                                 <td class="champ"><center>5kg nature</center></td>
                                 <td class="champ"><center>4,50€</center></td>
                             </tr>
-                            <tr> 
+                            <tr>
                                 <td class="champ"><center>250g aromatisé</center></td>
                                 <td class="champ"><center>1,80€</center></td>
                             </tr>
-                            <tr> 
+                            <tr>
                                 <td class="champ"><center>500g aromatisé</center></td>
                                 <td class="champ"><center>3,00€</center></td>
                             </tr>
-                            <tr> 
+                            <tr>
                                 <td class="champ"><center>1kg aromatisé</center></td>
                                 <td class="champ"><center>5,00€</center></td>
                             </tr>
@@ -82,15 +82,15 @@
                                     <td class="champ"><center>125g nature</center></td>
                                     <td class="champ"><center>2,00€</center></td>
                                 </tr>
-                                <tr> 
+                                <tr>
                                     <td class="champ"><center>250g nature</center></td>
                                     <td class="champ"><center>3,50€</center></td>
                                 </tr>
-                                <tr> 
+                                <tr>
                                     <td class="champ"><center>500g nature</center></td>
                                     <td class="champ"><center>6,00€</center></td>
                                 </tr>
-                                <tr> 
+                                <tr>
                                     <td class="champ"><center>125g aromatisé</center></td>
                                     <td class="champ"><center>3,50€</center></td>
                                 </tr>
@@ -111,11 +111,11 @@
                                 <td class="champ"><center>250g nature</center></td>
                                 <td class="champ"><center>1,30€</center></td>
                             </tr>
-                            <tr> 
+                            <tr>
                                 <td class="champ"><center>500g nature</center></td>
                                 <td class="champ"><center>2,30€</center></td>
                             </tr>
-                            <tr> 
+                            <tr>
                                 <td class="champ"><center>250g aromatisé</center></td>
                                 <td class="champ"><center>2,50€</center></td>
                             </tr>
@@ -125,7 +125,7 @@
                 </div>
             </div>
         </section>
-        <footer>© La Griffardière. Tous droits réservés.</footer>
+        <footer>© La Griffardière</footer>
         <script src="{{ url_for('static', filename='js/jquery-1.3.2.min.js') }}"></script>
         <script src="{{ url_for('static', filename='js/hide_show_produits.js') }}"></script>
     </body>
