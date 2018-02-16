@@ -11,7 +11,7 @@ function do_upload {
 }
 
 function do_test {
-    docker run -it --rm -p 80:80 ${image}
+    docker run -it --rm -p 8090:80 ${image}
 }
 
 case "$1" in
