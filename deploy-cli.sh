@@ -1,5 +1,15 @@
 #!/bin/bash
-source config/config.cfg
+version_major=0
+version_minor=1
+version="${version_major}.${version_minor}"
+
+registry_ip="kuajstry.ddns.net"
+registry_port=5000
+registry="${registry_ip}:${registry_port}"
+
+image_name="lagriffardiere"
+image="${registry}/${image_name}:${version}"
+
 
 function do_build {
     docker build -t ${image} .

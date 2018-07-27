@@ -1,5 +1,6 @@
 import os
 import flask
+from gevent.pywsgi import WSGIServer
 
 app = flask.Flask(__name__)
 
@@ -18,3 +19,11 @@ def produits():
 @app.route('/contact')
 def contact():
     return flask.render_template('contact.html')
+
+def main():
+    http = WSGIServer(('', 80), app.wsgi_app)
+    http.serve_forever()
+
+
+if __name__ == '__main__':
+    main()
