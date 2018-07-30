@@ -1,7 +1,6 @@
-build:
-	docker build -t lagriffardiere:0.2 .
+source="$(PWD)/source"
 
-run:
+default:
 	docker rm -f lagriffardiere ||:
-	docker run -d --restart always --name lagriffardiere -p 80:80 lagriffardiere:0.2
+	docker run -d --restart always --name lagriffardiere -p 80:80 -v $(source):/usr/share/nginx/html:ro nginx
 	docker logs -f lagriffardiere
