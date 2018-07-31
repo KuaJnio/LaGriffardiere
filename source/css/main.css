@@ -147,13 +147,18 @@ footer {
     margin-top: 20px;
 }
 
+
 .tables {
-    width: 700px;
+    width: 720px;
+}
+
+.parfums {
+    width: 30%;
 }
 
 .table {
     font-size: 18px;
-    width: 100%;
+    width: 65%;
     margin-bottom: 10px;
     text-align: left;
     border-collapse: collapse;
