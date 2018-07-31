@@ -56,6 +56,11 @@ footer {
     color: #82D502;
 }
 
+.portrait {
+  border: 1px solid white;
+  border-radius: 3px;
+}
+
 .vignette {
     border-radius: 7px;
     width: 200px;
